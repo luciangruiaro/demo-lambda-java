@@ -1,4 +1,4 @@
-package tech.gruia.demoLambda.fp;
+package tech.gruia.demoLambda.fi;
 
 // this is not mandatory, but it is recommended, so the compiler will enforce the class to have only one abstract method
 @FunctionalInterface // aka sam-interfaces (sam stands for single abstract method)

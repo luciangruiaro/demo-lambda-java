@@ -1,13 +1,11 @@
-package tech.gruia.demoLambda.oop;
+package tech.gruia.demoLambda.oo;
 
-import tech.gruia.demoLambda.fp.Ringer;
+import tech.gruia.demoLambda.fi.Ringer;
 
 public class Phone implements Ringer {
 
     public String brand;
     public String model;
-
-    public Phone(){};
 
     @Override
     public void ring() {

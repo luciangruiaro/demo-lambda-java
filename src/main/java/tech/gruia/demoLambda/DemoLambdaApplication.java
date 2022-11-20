@@ -1,10 +1,10 @@
 package tech.gruia.demoLambda;
 
-import tech.gruia.demoLambda.fp.Ringer;
-import tech.gruia.demoLambda.fp.RingerRetType;
-import tech.gruia.demoLambda.fp.RingerStrArg;
-import tech.gruia.demoLambda.fp.RingerTwoStrArg;
-import tech.gruia.demoLambda.oop.Phone;
+import tech.gruia.demoLambda.fi.Ringer;
+import tech.gruia.demoLambda.fi.RingerRetType;
+import tech.gruia.demoLambda.fi.RingerStrArg;
+import tech.gruia.demoLambda.fi.RingerTwoStrArg;
+import tech.gruia.demoLambda.oo.Phone;
 
 /*
  * OOP is good for a fixed set of operations on things
@@ -39,7 +39,7 @@ public class DemoLambdaApplication {
 
 
         /*
-         * so, let's see how we can transform that
+         * so, let's see how we can transform the OOP implementation into a lambda expression
          * 1. remove access level
          * 2. remove name of the method, it's important just what it does
          * 3. remove the return type
@@ -93,15 +93,12 @@ public class DemoLambdaApplication {
     static void ringPhone(Ringer ringer) {
         ringer.ring();
     }
-
     static void ringPhoneStrArg(RingerStrArg ringerStrArg) {
         ringerStrArg.ring("_end");
     }
-
     static void ringPhoneTwoStrArg(RingerTwoStrArg ringerTwoStrArg) {
         ringerTwoStrArg.ring("start_", "_end");
     }
-
     static void ringPhoneRetType(RingerRetType ringerRetType) {
         ringerRetType.ring("start_", "_end");
     }

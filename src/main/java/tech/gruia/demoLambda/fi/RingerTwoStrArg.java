@@ -1,4 +1,4 @@
-package tech.gruia.demoLambda.fp;
+package tech.gruia.demoLambda.fi;
 
 @FunctionalInterface
 public interface RingerTwoStrArg {
